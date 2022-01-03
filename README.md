@@ -1,4 +1,4 @@
-# Chifumi_project
+# Chifoumi_project
 Pierre Papier Ciseaux
 
 Ce projet consiste a créer un jeu s'inspirant du Pirerre Papier Ciseaux, il y aura donc un joueur qui jouera contre une interface qui va choisir aléatoirement entre pierre, papier et ciseaux
