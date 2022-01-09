@@ -1,8 +1,46 @@
-Reprenons ce programme ligne par ligne pour l'expliquer en détails :
+Une partie de mon programme en détails :
 
-- " # jeu pierre, papier, ciseaux et # l'ordinateur joue au hasard "
-  Il est toujours utile de décrire ce que fait le programme au début du code.
+- ``` # jeu pierre, papier, ciseaux et # l'ordinateur joue au hasard ```
+Description de ce que fait le programme au début du code.
 
-- " from random import randint "
-  Revoici le module random d'où nous importons la fonction randint(a,b), qui renvoie un
-  nombre aléatoirement entre a et b
+- ``` " from random import randint " ```
+Le module random d'où nous importons la fonction randint(a,b), qui renvoie un
+nombre aléatoirement entre a et b
+
+```
+def ecrire(nombre):
+ if nombre == 1:
+ print("pierre",end=" ")
+ elif nombre == 2:
+ print("papier",end=" ")
+ else:
+ print("ciseaux",end=" ")
+ ```
+ 
+J'ai fait le choix de mettre des print(....end=" "). Car cela indique à
+Python qu'il faut continuer d'écrire sur la même ligne, après avoir inséré un espace.
+La deuxième procédure du programme est donc chargée de mettre à jour les scores des joueurs en
+fonctions de leur coup.
+
+```
+def augmenter_scores(mon_coup,ton_coup,mon_score,ton_score):
+ mon_nouveau_score = mon_score
+ ton_nouveau_score = ton_score
+ if mon_coup == 1 and ton_coup == 2:
+ ton_nouveau_score += 1
+ elif mon_coup == 2 and ton_coup == 1:
+ mon_nouveau_score += 1
+ elif mon_coup == 1 and ton_coup == 3:
+ mon_nouveau_score += 1
+ elif mon_coup == 3 and ton_coup == 1:
+ ton_nouveau_score += 1
+ elif mon_coup == 3 and ton_coup == 2:
+ mon_nouveau_score += 1
+ elif mon_coup == 2 and ton_coup == 3:
+ ton_nouveau_score += 1
+ return mon_nouveau_score,ton_nouveau_score
+
+ ```
+Cette fonction va renvoyer deux valeurs (mon_nouveau_score et ton_nouveau_score) qu'il
+faudra stocker dans des variables (dans notre exemple mon_score et ton_score). On appellera
+donc cette fonction par cette ligne
