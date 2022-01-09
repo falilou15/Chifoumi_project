@@ -1,0 +1,8 @@
+Reprenons ce programme ligne par ligne pour l'expliquer en détails :
+
+- " # jeu pierre, papier, ciseaux et # l'ordinateur joue au hasard "
+Il est toujours utile de décrire ce que fait le programme au début du code.
+
+- " from random import randint "
+Revoici le module random d'où nous importons la fonction randint(a,b), qui renvoie un
+nombre aléatoirement entre a et b
