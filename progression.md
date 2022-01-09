@@ -17,3 +17,10 @@ donc j'ai décidé de créer la fonction "écrire" qui associe le nombre 1 à la
 06/01/2022 : Mise en place de l'affichage du programme pour pouvoir jouer au jeu.
 
 08/01/2022 et 09/01/2022 : Réddation du GitHub et preparation pour l'oral.
+
+Ce que j'ai retenu :
+
+- Les procédures et les fonctions permettent de découper le programme en sous-programmes.
+- Cela permet d'augmenter la lisibilité et d'éviter d'écrire plusieurs fois la même chose.
+- La différence entre une fonction et une procédure, c'est qu'une fonction renvoie une ou plusieurs valeurs.
+- Ce qu'étaient des variables globales
