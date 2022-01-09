@@ -1,9 +1,9 @@
 Une partie de mon programme en détails :
 
-- # jeu pierre, papier, ciseaux et # l'ordinateur joue au hasard
+# jeu pierre, papier, ciseaux et # l'ordinateur joue au hasard
 Description de ce que fait le programme au début du code.
 
--  " from random import randint " 
+" from random import randint " 
 Le module random d'où nous importons la fonction randint(a,b), qui renvoie un
 nombre aléatoirement entre a et b
 
